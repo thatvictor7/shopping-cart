@@ -57,7 +57,6 @@ class App extends Component {
     arr.map(item => {
       counter += ((item.product.priceInCents * item.quantity) / 100)
     })
-    // console.log(counter)
     return counter
   }
 
@@ -65,13 +64,6 @@ class App extends Component {
     const newcart = this.state.cartItemsList.concat({id: this.state.cartItemsList.length+1, product: {id: this.state.currentId, name: this.state.currentName, priceInCents: this.state.currentPrice }, quantity: this.state.currentQuantity})
     this.setState({cartItemsList: newcart}, () => console.log(this.state))
     var counter = 0
-    // this.total(this.state.cartItemsList)
-    // this.state.cartItemsList.map(item => {
-    //   counter += item.product.priceInCents
-    // })
-    // this.setState({currentTotal: counter})
-    // console.log("current total",this.state.currentTotal, "counter",counter);
-    // this.logging()
   }
 
   render() {

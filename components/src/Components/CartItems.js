@@ -19,7 +19,6 @@ const CartItems = (props) => {
     <div>
       Total Price: ${props.total(props.list)}
     </div>
-    {/* {console.log(props.test)} */}
   </div>
 </div>
   )
